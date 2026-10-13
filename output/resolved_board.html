@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resolved Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f3eee4;--hi:#fbf8f2;--ink:#1c2333;--ink2:#3d4558;--ink3:#6e7383;--rule:#d6ccba;--ox:#7a1f26}
+*{box-sizing:border-box} body{margin:0;background:var(--paper);color:var(--ink);font:400 15px/1.6 "Libre Caslon Text",Georgia,serif}
+.wrap{max-width:1240px;margin:0 auto;padding:40px 16px 60px}
+header{border-bottom:3px double var(--ink);padding-bottom:18px;margin-bottom:28px}
+.eyebrow,.label,dt{font:500 10.5px/1.4 Jost,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--ink3)}
+h1{font:400 clamp(30px,5vw,46px)/1.05 "Libre Caslon Display",Georgia,serif;margin:6px 0 6px} h1 i{color:var(--ox)}
+.sub{color:var(--ink2);font-style:italic}
+.ledger{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));border:1px solid var(--ink);background:var(--hi);margin-bottom:34px}
+.ledger div{padding:14px 16px;border-right:1px solid var(--rule)} .ledger div:last-child{border-right:0}
+.ledger b{display:block;font:400 26px/1.2 "Libre Caslon Display",Georgia,serif} .ledger .neg b{color:var(--ox)}
+.ticket{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:30px;padding:30px 0;border-top:1px solid var(--ink)}
+h2{font:400 30px/1.1 "Libre Caslon Display",Georgia,serif;margin:4px 0 10px}
+.stamps{display:flex;gap:12px;align-items:center;margin:0 0 12px}
+.stamp{border:1.5px solid var(--ox);color:var(--ox);padding:3px 9px 2px;font:500 10px/1.2 Jost,sans-serif;letter-spacing:.22em;text-transform:uppercase;transform:rotate(-2deg);display:inline-block}
+.next{font-style:italic;color:var(--ink2)} .outcome{margin:0 0 14px}
+dl{margin:0 0 14px;border-top:1px solid var(--rule)} dl div{padding:8px 0;border-bottom:1px solid var(--rule)} dd{margin:2px 0 0}
+ul{margin:6px 0 12px;padding-left:18px} li{margin-bottom:6px}
+.open{border-left:2px solid var(--ox);padding-left:12px;font-size:14px;color:var(--ink2)}
+.shot img{width:100%;border:1px solid var(--ink);box-shadow:8px 8px 0 -1px var(--paper),8px 8px 0 0 var(--ink);display:block}
+footer{border-top:3px double var(--ink);margin-top:30px;padding-top:12px;font:500 10px/1.8 Jost,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--ink3);text-align:center}
+@media(max-width:820px){.ticket{grid-template-columns:1fr}}
+</style></head><body><div class="wrap">
+<header><p class="eyebrow">Campus Customs &amp; Co. · Problem 9 · Resolve the tickets</p>
+<h1>The Resolved Board <i>&amp;</i> the Books</h1>
+<p class="sub">All three matters run by the agent team after a clean reset, payments signed by a human, screenshots from the React desk. Click a screenshot for full size.</p></header>
+<div class="ledger">
+ <div><span class="eyebrow">Starting checking</span><b>$3,400.00</b></div>
+ <div class="neg"><span class="eyebrow">Invoice #501 · 101</span><b>−$840.00</b></div>
+ <div class="neg"><span class="eyebrow">Rent, lease 1 · 102</span><b>−$2,400.00</b></div>
+ <div><span class="eyebrow">Ending checking</span><b>$160.00</b></div>
+ <div><span class="eyebrow">Matches cash_accounts</span><b>Yes</b></div>
+</div>
+
+  <section class="ticket" id="t101">
+    <div class="ticket__text">
+      <p class="eyebrow">Matter No. 101</p>
+      <h2>In re: Bulldog tee</h2>
+      <p class="stamps"><span class="stamp">Resolved</span><span class="next">Awaiting the client</span></p>
+      <p class="outcome">Tee size S was out of stock (0). The team requested payment of overdue invoice #501 ($840) so Bulldog Print Co could ship, drafted a 1-tee PO ($8), and drafted a reply to Tauhid with no promised date. Olivia approved both; after payment the vendor can ship (about 5 days). The team is waiting on Tauhid&#x27;s answer.</p>
+      <dl>
+        <div><dt>Client</dt><dd>Tauhid Zaman</dd></div>
+        <div><dt>Team on the first run</dt><dd>Inventory, Accounting, Boss, Customer Service</dd></div>
+        <div><dt>Delegations</dt><dd>Boss → Inventory · Boss → Accounting · Accounting → Inventory · Boss → Customer Service</dd></div>
+        <div><dt>Cash effect</dt><dd>−$840.00</dd></div>
+      </dl>
+      <p class="label">Human approvals</p>
+      <ul><li><b>Payment request #1: invoice 501 to Bulldog Print Co</b> · $840.00. Approved by Olivia Obodoagha · checking after: $2,560.00</li><li><b>Purchase order draft #1 to Bulldog Print Co (1 x Classic Bulldog Tee, size S, $8)</b>. Approved by Olivia Obodoagha · no cash moved</li></ul>
+      
+    </div>
+    <a class="shot" href="screens/board_101.png"><img src="screens/board_101.png" alt="The React desk with matter 101 open after the run" loading="lazy"></a>
+  </section>
+  <section class="ticket" id="t102">
+    <div class="ticket__text">
+      <p class="eyebrow">Matter No. 102</p>
+      <h2>In re: Rent due</h2>
+      <p class="stamps"><span class="stamp">Resolved</span><span class="next">Closed</span></p>
+      <p class="outcome">The rent notice matched lease 1 ($2,400 to Elm City Properties, due 2026-09-02). Facilities checked it, Accounting requested it, and Olivia approved it. Rent is paid and the next rent is due 2026-10-02. Closed.</p>
+      <dl>
+        <div><dt>Client</dt><dd>Elm City Properties</dd></div>
+        <div><dt>Team on the first run</dt><dd>Facilities, Accounting, Boss</dd></div>
+        <div><dt>Delegations</dt><dd>Boss → Facilities · Facilities → Accounting</dd></div>
+        <div><dt>Cash effect</dt><dd>−$2,400.00</dd></div>
+      </dl>
+      <p class="label">Human approvals</p>
+      <ul><li><b>Payment request #2: rent 1 to Elm City Properties</b> · $2,400.00. Approved by Olivia Obodoagha · checking after: $160.00</li></ul>
+      
+    </div>
+    <a class="shot" href="screens/board_102.png"><img src="screens/board_102.png" alt="The React desk with matter 102 open after the run" loading="lazy"></a>
+  </section>
+  <section class="ticket" id="t103">
+    <div class="ticket__text">
+      <p class="eyebrow">Matter No. 103</p>
+      <h2>In re: Bulk hoodie discount</h2>
+      <p class="stamps"><span class="stamp">Resolved</span><span class="next">Awaiting a signature</span></p>
+      <p class="outcome">Only 8 of 20 navy hoodies (size M) were in stock. Accounting priced offers with quote_price (10% off = $52.20, 20% off = $46.40, both above the $22 cost), Inventory reserved the 8, and Customer Service drafted the offer at $52.20 each ($417.60). No payment was needed. On the follow-up, Accounting drafted a PO for the other 12 ($264) and warned against approving it, since only $160 is left.</p>
+      <dl>
+        <div><dt>Client</dt><dd>Yale AI Club</dd></div>
+        <div><dt>Team on the first run</dt><dd>Boss, Inventory, Accounting, Customer Service</dd></div>
+        <div><dt>Delegations</dt><dd>Boss → Inventory · Boss → Accounting · Boss → Inventory · Boss → Customer Service</dd></div>
+        <div><dt>Cash effect</dt><dd>$0.00</dd></div>
+      </dl>
+      <p class="label">Human approvals</p>
+      <ul><li>None needed: no payment on this ticket.</li></ul>
+      <p class="open"><b>Open item:</b> Purchase order draft #5: 12 x Basic Hoodie Big Yale size M to Bulldog Print Co, $264 total (pending approval). Accounting and Boss both advise against approving: $264 is more than the $160 left, and no revenue comes in. It moves no cash unless a later invoice is paid.</p>
+    </div>
+    <a class="shot" href="screens/board_103.png"><img src="screens/board_103.png" alt="The React desk with matter 103 open after the run" loading="lazy"></a>
+  </section>
+<footer>Every agent ran on gpt-6-luna via Portkey · data from output/resolved_tickets.json and output/audit_trail.json</footer>
+</div></body></html>

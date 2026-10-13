@@ -1,0 +1,68 @@
+/* Campus Customs & Co. · the desk
+   Letterhead ivory, navy ink, one oxblood accent. Caslon for the record,
+   Jost for labels, Courier Prime for what the court reporter types. */
+
+:root {
+  --paper: #f3eee4;
+  --paper-hi: #fbf8f2;
+  --manila: #ece2cd;
+  --manila-edge: #d8c9aa;
+  --ink: #1c2333;
+  --ink-2: #3d4558;
+  --ink-3: #6e7383;
+  --rule: #d6ccba;
+  --rule-soft: #e6dfd1;
+  --oxblood: #7a1f26;
+  --oxblood-deep: #5c161c;
+  --oxblood-wash: rgba(122, 31, 38, 0.06);
+  --navy-wash: rgba(28, 35, 51, 0.05);
+
+  --display: 'Libre Caslon Display', 'Didot', Georgia, serif;
+  --serif: 'Libre Caslon Text', Georgia, 'Times New Roman', serif;
+  --sans: 'Jost', 'Futura', 'Avenir Next', 'Helvetica Neue', sans-serif;
+  --mono: 'Courier Prime', 'Courier New', ui-monospace, monospace;
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--paper);
+  /* faint laid-paper lines, like letter stock */
+  background-image: repeating-linear-gradient(0deg, transparent 0 3px, rgba(28, 35, 51, 0.018) 3px 4px);
+  color: var(--ink);
+  font: 400 15px/1.6 var(--serif);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+::selection {
+  background: var(--oxblood);
+  color: var(--paper-hi);
+}
+
+:focus-visible {
+  outline: 2px solid var(--oxblood);
+  outline-offset: 2px;
+}
