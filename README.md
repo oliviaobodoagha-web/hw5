@@ -29,7 +29,7 @@ Shop rules the code enforces:
 
 ```bash
 git clone <this repo>
-cd <repo folder>
+cd hw5
 
 # Python (MCP server + backend)
 python3 -m venv .venv
