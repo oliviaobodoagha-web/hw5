@@ -213,3 +213,15 @@ The runs finished, but the payments were still waiting for a human signature, so
 The reflection used numbers from my runs, but the evidence wasn't pointed out answer by answer, and one closing paragraph drifted toward generic.
 
 > Tie every answer to this app and the three tickets I ran _ use the ticket tabs and Cash tab on the same page as your evidence. Generic AI essays without Campus custums deatil will score low. DO do that to me.
+
+## Problem 11: Submit to GitHub
+
+**Prompt 1**
+
+> Problem 11 is call submit to GitHub. Push the code to a public GitHub repository so that the graders can clone it. Submit the repo URL to Canvas, and also put it in output/github_url.txt. Do not push my real .env to the GitHub repo. Do include both database files under data/ (the orginal and the working copt) so graders can run the app easily. README should explain: copy oringal DB to the working copy when I need a clean run, start MCP server, start FASTAPI backenf, start the React board, reset the DB before a full three-ticket run.
+
+**Follow-up prompt 1**
+
+This Mac had no saved GitHub login, so the code couldn't be pushed until I signed in through the GitHub CLI in my browser.
+
+> my github is open on my chrome
