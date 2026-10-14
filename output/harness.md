@@ -258,9 +258,9 @@ Nested agents share one usage counter, so the limits cover the whole team on a t
 
 ## Full team run (`python -m backend.run_team`)
 
-`reset_shop` runs first. Boss then works each open ticket in order. The summary is saved to `output/team_run.json`, and every step is appended to `output/audit_trail.json`.
+`reset_shop` runs first. Boss then works each open ticket in order. The summary is saved locally to `output/team_run.json` (not committed), and every step is appended to `output/audit_trail.json`.
 
-Latest run (`20261011-214812-497a02`, 166 audit entries, only `gpt-6-luna-global` in every model response). `output/desk_tickets.html` compares it step by step with the plan in `output/ticket_plan.md`.
+Latest run (`20261011-214812-497a02`, 166 audit entries, only `gpt-6-luna-global` in every model response). `output/desk_tickets.html` compares it step by step with the Expected plan on each ticket tab.
 
 | Ticket | Boss called first | Specialists | Delegations (plan → actual) | Tokens | Board status | Outcome |
 |---|---|---|---|---|---|---|
@@ -381,4 +381,4 @@ All three show **RESOLVED** on the board: the team finished and made its call.
 **Deliverables**
 - `output/desk_tickets.html`: each ticket tab now has the Problem 9 **Actual** (agents, delegations, MCP tools, writes, approvals, follow-up) next to the **Expected** plan. Earlier test runs are folded underneath. The **Cash** tab itemizes the money from reset to the ending balance.
 - `output/resolved_tickets.json`: for each ticket, the id, final status, short outcome, what each agent contributed (tools, delegations, memo) for both runs, human approvals, and the cash change. It also has the starting and ending balances, with a check that the ending balance matches `cash_accounts`.
-- `output/resolved_board.html`: a double-clickable page with a screenshot of the React desk for each resolved ticket (`output/screens/board_101.png`, `board_102.png`, `board_103.png`, captured with headless Chrome at 1440 px using the desk's `?ticket=` link).
+- `output/resolved_board.html`: a double-clickable page with a screenshot of the React desk for each resolved ticket (captured with headless Chrome at 1440 px using the desk's `?ticket=` link and built into the page).

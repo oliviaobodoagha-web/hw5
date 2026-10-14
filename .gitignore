@@ -19,3 +19,6 @@ data/*.db-journal
 
 # Claude Code local settings
 .claude/
+
+# Written locally by `python -m backend.run_team`
+output/team_run.json

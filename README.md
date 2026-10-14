@@ -125,7 +125,7 @@ There's also a script that resets the database first and then runs all three tic
 python -m backend.run_team
 ```
 
-It writes `output/team_run.json`. Payments still wait for a human to approve them on the dashboard.
+It writes a summary to `output/team_run.json` on your machine (not committed). Payments still wait for a human to approve them on the dashboard.
 
 ## What's in `output/`
 
@@ -134,10 +134,10 @@ It writes `output/team_run.json`. Payments still wait for a human to approve the
 | `harness.md` | The full write-up: tables, all 16 MCP tools, the five agents, the audit trail, safety and token limits, routes, the dashboard, and the Problem 9 results |
 | `desk_tickets.html` | Double-click it. One tab per ticket with my **Expected** plan and the **Actual** run, plus the **Cash** ledger and my **Reflection** |
 | `resolved_tickets.json` | Per ticket: final status, outcome, what each agent contributed, human approvals, and cash change |
-| `resolved_board.html` | Double-click it. Screenshots of the React desk for each resolved ticket (`screens/`) |
+| `resolved_board.html` | Double-click it. Screenshots of the React desk for each resolved ticket, built into the page |
 | `audit_trail.json` | Every agent-loop step from every run, append-only |
 | `design.md` | Why the dashboard looks and works the way it does |
-| `ticket_plan.md`, `team_run.json`, `mcp_smoke.json` | The plan, a full-run summary, and the MCP smoke test |
+| `mcp_smoke.json` | The MCP smoke test: my prompts, the tool called, and its output checked against the database |
 | `github_url.txt` | This repository's URL |
 
 ## Safety, briefly
